@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+header {
+  display: flex;
+  background-image: url('./assets/images/desktop/image-header.jpg');
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 35px;
+  
+}
+
+nav ul a{
+
+  margin: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Fraunces', serif;
+
+  
+
+  
+}
+
+.logo{
+  display: flex;
+  margin: 30px 0 0 20px;
+  width: 124px;
+  height: 24px;
+  
+}
+
+/* .text{
+
+  position: relative;
+  top: -700px; left: 35%;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: white;
+  
+} */
+
+.text-titulo{
+  position: absolute;
+  top: 20%;
+  left:35%;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: white;
+
+}
+
+.img-titulo{
+  position: absolute;
+  top: 35%;
+  left:50%;
+}
+.section1{
+  display: flex;
+  margin: 0;
+  padding:0;
+}
+.img-bloque{
+  
+  width: 100%;
+}
+.text-bloque{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  background: white ;
+}
+
+.text-section1-title{
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: black;
+}
+
+.text-section1-description{
+  font-family: 'Barlow', sans-serif;
+  color: black;
+  font-size: 18px;
+  
+}
+
+.a-ref-section1{
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: black;
+}
+
+.img-section1{
+  width: 100%;
+  height: auto;
+
+}
+
