@@ -24,7 +24,13 @@ nav{
   justify-content: center;
   margin-left: auto;
   margin-top: 35px;
+
   
+}
+
+nav a{
+  position: relative;
+  padding: 20px;
 }
 
 nav ul a{
@@ -34,10 +40,37 @@ nav ul a{
   text-decoration: none;
   font-size: 18px;
   font-family: 'Fraunces', serif;
-
   
-
   
+}
+
+nav a::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 0;
+  height: 4px;
+  background-color: hsl(0, 0%, 100%);
+  transition: .3s;
+  
+}
+
+nav a:hover::before{
+  width: 100%;
+
+}
+
+.nav-contact{
+  background: white;
+  color: black;
+  border-radius: 30px;
+}
+
+.nav-contact:hover{
+  background: hsla(206, 4%, 67%, 0.452);
+  border: 1px solid white;
+  color: white;
 }
 
 .logo{
@@ -45,8 +78,12 @@ nav ul a{
   margin: 30px 0 0 20px;
   width: 124px;
   height: 24px;
+  cursor: pointer;
   
 }
+
+
+/* __________________________________________________ */
 
 /* .text{
 
@@ -75,6 +112,8 @@ nav ul a{
   top: 35%;
   left:50%;
 }
+
+/* SECTION 1 ------------------------------------------------------------ */
 .section1{
   display: flex;
   margin: 0;
@@ -83,30 +122,38 @@ nav ul a{
 .img-bloque{
   
   width: 100%;
+  
 }
 .text-bloque{
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
-  border: 1px solid black;
+
+  
+  
   background: white ;
 }
 
 .text-section1-title{
+  
   font-family: 'Fraunces', serif;
   font-weight: 900;
   font-size: 60px;
   color: black;
+  width: 60%;
 }
 
 .text-section1-description{
   font-family: 'Barlow', sans-serif;
   color: black;
   font-size: 18px;
+  text-align: center;
+  width: 60%;
+
+  
   
 }
 
@@ -115,6 +162,29 @@ nav ul a{
   font-weight: 900;
   font-size: 20px;
   color: black;
+  margin: 30px 0 0 0;
+  text-decoration: none;
+}
+
+.text-bloque a {
+  position: relative;
+}
+
+.a-ref-section1::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 0;
+  height: 3px;
+  background-color: hsl(51, 100%, 49%);
+  transition: .3s;
+  
+}
+
+.a-ref-section1:hover::before{
+  width: 100%;
+
 }
 
 .img-section1{
@@ -123,3 +193,280 @@ nav ul a{
 
 }
 
+
+
+
+
+/* SECTION 2 ______________________________________________________________________ */
+
+.section2{
+  display: flex;
+  margin: 0;
+  padding:0;
+}
+.img-bloque{
+  
+  width: 100%;
+  
+}
+.text-bloque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  
+  
+  background: white ;
+}
+
+.text-section2-title{
+  
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: black;
+  width: 70%;
+}
+
+.text-section2-description{
+  font-family: 'Barlow', sans-serif;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  width: 60%;
+
+  
+  
+}
+
+.a-ref-section2{
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: black;
+  margin: 30px 0 0 0;
+  text-decoration: none;
+}
+
+.a-ref-section2::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 0;
+  height: 3px;
+  background-color: hsl(7, 99%, 70%);
+  transition: .3s;
+  
+}
+
+
+
+.a-ref-section2:hover::before{
+  width: 100%;
+
+}
+
+.img-section2{
+  width: 100%;
+  height: auto;
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+
+
+.centrado{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: hsl(167, 40%, 24%)
+}
+
+.centrado-next{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow', sans-serif;
+}
+
+.centrado1{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: hsl(198, 62%, 26%)
+}
+
+.centrado-next1{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow', sans-serif;
+}
+
+
+.section4{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.title-section4{
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(210, 4%, 67%);
+  margin: 100px 0 0 0;
+
+}
+
+.personas-section4{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 65%;
+}
+
+.info-section4{
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  
+  
+}
+
+.descripition-section-4{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color: hsl(213, 9%, 39%);
+  margin: 20px;
+}
+
+.name-section-4{
+  
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin: 20px;
+}
+
+.profesion-section-4{
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: hsl(210, 4%, 67%);
+  margin: 0 0 0 40px;
+  
+  
+}
+
+
+.img-section4{
+  border-radius: 100px;
+}
+
+
+/* section 5 */
+.section5{
+
+  display: flex;
+  
+}
+
+.section5 img{
+  width: 25%;
+  
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background:hsl(168, 34%, 41%);
+}
+
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 40px 0;
+  
+}
+
+
+.a-ref-footer{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 50px 0;
+  
+}
+
+.ref-foot{
+
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  color: hsl(167, 40%, 24%);
+ 
+}
+
+.redes-footer{
+  display: flex;
+  justify-content: center;
+
+}
+
+.redes-img-footer{
+  width: fit-content;
+  height: auto;
+
+}
+
+
+
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.icon img {
+  width: 30px; /* Ajusta el tamaño según tus preferencias */
+  height: 30px; /* Ajusta el tamaño según tus preferencias */
+}
+
+.icon:hover img {
+  opacity: 0.7; /* Puedes ajustar la opacidad al pasar el mouse */
+}
